@@ -1,4 +1,3 @@
-/* CONTEÚDO ORIGINAL DO STYLE.CSS */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -162,9 +161,7 @@ header.cabecalho {
     }
 }
 
-/* ========================================= */
-/* CONTEÚDO ORIGINAL DO CS1.CSS (SEÇÃO YAN)  */
-/* ========================================= */
+
 
 .secao-yan {
     min-height: 110vh;
@@ -298,10 +295,6 @@ h1 {
         transform: translateY(0px);
     }
 }
-
-/* ========================================= */
-/* CONTEÚDO ORIGINAL DA MARIANA.CSS          */
-/* ========================================= */
 
 .secao-mariana {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
