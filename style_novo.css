@@ -1,0 +1,622 @@
+/* CONTEÚDO ORIGINAL DO STYLE.CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 5vh;
+    background-color: rgb(9, 9, 20);
+}
+
+.entrada {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.delorean-run {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    animation: viagem 6s linear infinite;
+}
+
+/* Header */
+header.cabecalho {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#video-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    color: #dbf7ff;
+    text-shadow: 6px 6px 15px #159cb1;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#title-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7em;
+    color: #ffffff;
+    text-shadow: 6px 8px 40px #159cb1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#text-cabecalho {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2.2em;
+    color: #b8f1ec;
+    margin-bottom: 50px;
+}
+
+.boxcabecalho {
+    margin-top: 50px;
+    padding: 15px;
+    animation-name: flutuando;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Legado */
+
+#legado {
+    position: relative;
+    min-height: 56vh;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.texto-legado {
+    display: grid;
+    text-align: center;
+    font-size: 2em;
+    justify-items: center;
+    color: #ffffff;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.boxlegado {
+    margin-top: 50px;
+    width: 350px;
+    height: 135px;
+    border: 1px solid #159cb1;
+    border-radius: 10px;
+    animation-name: flutuando;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.boxlegado-gif {
+    margin-top: 50px;
+    width: 290px;
+    height: 105px;
+    border-radius: 10px;
+    animation-name: flutuando;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Footer */
+.footer {
+    background-color: #159cb1;
+    height: 30vh;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@keyframes flutuando {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes viagem {
+    0% {
+        left: -250px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/* ========================================= */
+/* CONTEÚDO ORIGINAL DO CS1.CSS (SEÇÃO YAN)  */
+/* ========================================= */
+
+.secao-yan {
+    min-height: 110vh;
+    background: linear-gradient(120deg, #a1afff, #fbf7ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    font-family: Arial, sans-serif;
+    padding: 40px 0;
+}
+
+/* Caixona  principal */
+.container {
+    width: 1080px;
+}
+
+/* Tag superior */
+.tag {
+    background: linear-gradient(40deg, #dedeff, #e9d1ff);
+    color: #4a4ab3;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    animation: fadeIn linear 1s;
+}
+
+/* Título */
+h1 {
+    margin-top: 20px;
+    font-size: 58px;
+    background: linear-gradient(120deg, #2f2f8f, #890286);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #2f2f8f;
+    animation: fadeIn linear 1s;
+}
+
+/* Subtítulo */
+.subtitulo {
+    margin-top: 10px;
+    color: #333;
+    max-width: 500px;
+    font-size: 16px;
+    animation: fadeIn linear 1s;
+}
+
+/* Grid de cards */
+.cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Card */
+.card {
+    background: linear-gradient(#ffffff, #f8eaff);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1 1px 20px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(1px 1px 5px #0000005b);
+    transition: 0.3s;
+    animation: fadeIn linear 1s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Ano */
+.ano {
+    font-size: 12px;
+    color: #6c6cff;
+}
+
+/* Título do card */
+.card h3 {
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Texto */
+.card p {
+    margin-top: 8px;
+    color: #666;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Quote (aonde tá escrito a frase impactante lá) */
+.quote {
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(120deg, #4b3cc4, #2f8edb);
+    color: white;
+    text-align: center;
+    animation: fadeIn linear 1s;
+}
+
+.quote span {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.rodape {
+    margin-top: 40px;
+    color: #6565656c;
+    font-size: 15px;
+    font-style: italic;
+    animation: fadeIn linear 1s;
+    text-align: center;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 100;
+        transform: translateY(0px);
+    }
+}
+
+/* ========================================= */
+/* CONTEÚDO ORIGINAL DA MARIANA.CSS          */
+/* ========================================= */
+
+.secao-mariana {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.secao-mariana p,
+.secao-mariana h1,
+.secao-mariana h3 {
+    margin-bottom: 15px;
+}
+
+.secao-mariana h1 {
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: #1e3a8a;
+}
+
+.secao-mariana p {
+    line-height: 1.6;
+}
+
+.secao-mariana .primeira-parte>* {
+    max-width: 800px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secao-mariana .primeira-parte {
+    background-color: #c0c0c0;
+    width: 100%;
+    padding: 60px 0;
+    margin-bottom: 0;
+}
+
+.secao-mariana .primeira-parte h1,
+.secao-mariana .primeira-parte h3 {
+    color: #000000;
+}
+
+.secao-mariana .cartao {
+    border: 1.0px solid #000000;
+    padding: 30px;
+    background-color: #d8d8d8;
+    margin: 20px auto;
+    border-radius: 0;
+    max-width: 800px;
+    width: 90%;
+}
+
+.secao-mariana .legenda {
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.secao-mariana .destaque-ano {
+    color: #7e7d7d;
+    font-size: 14px;
+}
+
+.secao-mariana .numero-azul {
+    color: #00ced1;
+    font-weight: bold;
+}
+
+.secao-mariana .legenda-final {
+    font-size: 14px;
+    color: #7e7d7d;
+    border-top: 1px solid black;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px 20px;
+}
+
+.secao-mariana .segunda-parte {
+    background-color: #dbeafe;
+    width: 100%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.secao-mariana .segunda-parte h1,
+.secao-mariana .segunda-parte h3 {
+    color: #1e3a8a;
+}
+
+.secao-mariana .legenda2 {
+    text-align: left;
+    width: 90%;
+    max-width: 800px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px auto;
+}
+
+.secao-mariana .destaque-ano2 {
+    color: #5c5b5b;
+    font-size: 14px;
+}
+
+.secao-mariana .numero-azul2 {
+    color: #099799;
+    font-weight: bold;
+}
+
+.secao-mariana .corpo-janela {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-top: none;
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.secao-mariana .cartao-topo {
+    background: linear-gradient(to bottom, #729fcf, #3465a4);
+    border: 1px solid #1e3a8a;
+    border-radius: 8px 8px 0 0;
+    height: 35px;
+    width: 95%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin: 20px auto 0 auto;
+    position: relative;
+}
+
+.secao-mariana .cartao-topo p {
+    color: white;
+    font-size: 12px;
+    margin-left: 50px;
+    margin-bottom: 0;
+}
+
+.secao-mariana .cartao-topo::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #ff5f56;
+    border-radius: 50%;
+    box-shadow: 18px 0 0 #ffbd2e, 36px 0 0 #27c93f;
+}
+
+.secao-mariana .lista {
+    text-align: left;
+    width: 100%;
+    max-width: none;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 0px;
+}
+
+.secao-mariana .lista p {
+    position: relative;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.secao-mariana .lista p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+.secao-mariana .lista strong {
+    display: inline-block;
+    min-width: 105px;
+    color: #1e3a8a;
+}
+
+.secao-mariana .texto {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.secao-mariana .sobre-mim {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.secao-mariana .conquistas {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 50px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.secao-mariana .meu-botao p {
+    display: inline-block;
+    background-color: #7fa6cf;
+    border: 1px #000000;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 350px;
+    text-align: center;
+}
+
+.secao-mariana .meu-botao p:hover {
+    background-color: #e0e0e0;
+    border-color: #099;
+}
+
+.secao-mariana .sobre-conquistas {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 35px;
+    align-items: flex-start;
+    clear: both;
+    border-top: 5px solid #1e3a8a;
+    width: 100%;
+}
+
+.secao-mariana .sobre-mim,
+.secao-mariana .conquistas {
+    flex: 1;
+}
+
+.secao-mariana .rodape {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    font-size: 14px;
+    color: #5c5b5b;
+    padding-top: 15px;
+}
+
+.secao-mariana .foto {
+    padding: 3px;
+    background: #28629c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-mariana .foto img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.secao-mariana .coluna-esquerda {
+    float: left;
+    width: 260px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.secao-mariana .coluna-direita {
+    display: block;
+    overflow: hidden;
+}
+
+.secao-mariana .cartao-meio a {
+    display: block;
+    background: #c2d5ee;
+    border: 1px solid #cbd5e1;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #1e40af;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.secao-mariana .cartao-meio a:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
