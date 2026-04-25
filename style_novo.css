@@ -178,7 +178,8 @@ header.cabecalho {
 
 /* Caixona  principal */
 .container {
-    width: 1080px;
+    max-width: 1080px;
+    width: 90%;
 }
 
 /* Tag superior */
@@ -612,4 +613,110 @@ h1 {
 .secao-mariana .cartao-meio a:hover {
     background-color: #e0e0e0;
     border-color: #999;
+}
+
+
+/* Responsividade (Telas menores) */
+
+@media (max-width: 900px) {
+
+    /* Header Principal (Yago) */
+    #title-text {
+        font-size: 4em;
+    }
+
+    #text-cabecalho {
+        font-size: 1.5em;
+        padding: 0 20px;
+    }
+
+    .texto-legado {
+        grid-template-columns: 1fr;
+    }
+
+    .boxlegado {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .boxlegado-gif {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .delorean-run {
+        width: 150px;
+    }
+
+    /* Yan */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .quote {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    /* Mariana */
+    .secao-mariana .primeira-parte>* {
+        width: 95%;
+    }
+
+    .secao-mariana .cartao {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .secao-mariana .coluna-esquerda {
+        float: none;
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    .secao-mariana .coluna-direita {
+        display: block;
+        width: 100%;
+    }
+
+    .secao-mariana .corpo-janela {
+        padding: 15px;
+    }
+
+    .secao-mariana .sobre-conquistas {
+        flex-direction: column;
+    }
+
+    .secao-mariana .meu-botao p {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .secao-mariana .cartao-topo p {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Ajustes para celulares */
+    #title-text {
+        font-size: 3em;
+    }
+
+    #text-cabecalho {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .secao-mariana .primeira-parte h1 {
+        font-size: 24px;
+    }
 }
